@@ -15,17 +15,17 @@
 
   /* Gradient */
   --clr-pattern-gradient-light: repeating-linear-gradient(
-      var(--clr-neutral-200),
+      var(--clr-neutral-100),
       var(--clr-neutral-200) 1px,
       transparent 1px,
-      transparent 20px
+      transparent 30px
     ),
     repeating-linear-gradient(
       90deg,
-      var(--clr-neutral-200),
+      var(--clr-neutral-100),
       var(--clr-neutral-200) 1px,
       transparent 1px,
-      transparent 20px
+      transparent 30px
     );
   --clr-bg-gradient: radial-gradient(
       ellipse at bottom right,
@@ -212,6 +212,24 @@ header {
   margin-top: var(--spacing-300);
 }
 
+.not-average__img {
+  position: relative;
+}
+
+.not-average__img::after {
+  content: " ";
+  background-image: url(../assets/images/logos-tech.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  transform: translateX(-65%);
+}
+
 .reading-journey {
   background-image: var(--clr-pattern-gradient-light), var(--clr-bg-gradient);
   padding: 80px 60px;
@@ -236,6 +254,21 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-300);
+
+  position: relative;
+}
+
+.step-item:not(:last-child)::after {
+  content: " ";
+  background-image: url(../assets/images/pattern-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .step__number {
@@ -372,14 +405,14 @@ footer {
       rgba(255, 255, 255, 0.01),
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 20px
+      transparent 30px
     ),
     repeating-linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.01),
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 20px
+      transparent 30px
     ),
     var(--clr-neutral-900);
   color: var(--clr-neutral-0);
@@ -432,6 +465,11 @@ footer {
     max-width: none;
   }
 
+  .not-average__img::after {
+    left: 90%;
+    bottom: 20px;
+  }
+
   .reading-journey {
     padding: 40px 20px;
   }
@@ -439,6 +477,10 @@ footer {
   .reading-journey__heading {
     text-align: left;
     max-width: none;
+  }
+
+  .step-item:not(:last-child)::after {
+    display: none;
   }
 
   .step__description {
@@ -465,6 +507,10 @@ footer {
 
   .circle::after {
     width: 120px;
+  }
+
+  .not-average__img::after {
+    display: none;
   }
 
   .membership__heading {
