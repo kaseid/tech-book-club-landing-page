@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilis.css" />
+    <title>Tech Book Club</title>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="container">
+        <img
+          class="logo"
+          src="./assets/images/logo.svg"
+          alt="Tech Book Club logo"
+        />
+      </figure>
+      <div class="hero container grid grid-2-cols">
+        <article class="hero__content">
+          <h1 class="hero__title">Join the ultimate tech book club</h1>
+          <p class="hero__description">
+            Turn your reading time into learning time with fellow tech
+            enthusiasts. Get curated recommendations, join vibrant discussions,
+            and level up your skills one chapter at a time.
+          </p>
+          <button class="btn btn--primary">
+            Review Membership Options
+            <img
+              class="btn__icon"
+              src="./assets/images/icon-arrow-down.svg"
+              alt="down arrow icon"
+            />
+          </button>
+          <div class="testimonials">
+            <figure>
+              <img
+                class="testimonials__avatar"
+                src="./assets/images/image-avatars.webp"
+                alt="Three customer face picture"
+              />
+            </figure>
+            <article>
+              <div class="testimonials__rating">
+                <img src="./assets/images/icon-star.svg" alt="star icon" />
+                <img src="./assets/images/icon-star.svg" alt="star icon" />
+                <img src="./assets/images/icon-star.svg" alt="star icon" />
+                <img src="./assets/images/icon-star.svg" alt="star icon" />
+                <img src="./assets/images/icon-star.svg" alt="star icon" />
+              </div>
+              <p class="testimonials__total">200+ developers joined already</p>
+            </article>
+          </div>
+        </article>
+        <picture>
+          <source
+            media="(max-width: 475px)"
+            srcset="./assets//images/image-hero-mobile.webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets//images/image-hero-tablet.webp"
+          />
+          <img
+            class="hero__img"
+            src="./assets//images/image-hero-desktop.webp"
+            alt="People reading a book"
+          />
+        </picture>
+      </div>
+    </header>
+    <main class="container">
+      <!-- READ TOGETHER SECTION -->
+      <section class="read-together grid grid-2-cols">
+        <picture>
+          <source
+            media="(max-width: 475px)"
+            srcset="./assets//images/image-read-together-mobile.webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets//images/image-read-together-tablet.webp"
+          />
+          <img
+            class="section__img"
+            src="./assets//images/image-read-together-desktop.webp"
+            alt="four persons each one reading a book"
+          />
+        </picture>
+        <article class="section-content grid--order">
+          <h2 class="heading read-together__heading">
+            Read together, grow together
+          </h2>
+          <ul class="features-list">
+            <li class="feature-item">
+              <img src="./assets/images/icon-check.svg" alt="Check icon" />
+              Monthly curated tech reads selected by industry experts
+            </li>
+            <li class="feature-item">
+              <img src="./assets/images/icon-check.svg" alt="Check icon" />
+              Virtual and in-person meetups for deep-dive discussions
+            </li>
+            <li class="feature-item">
+              <img src="./assets/images/icon-check.svg" alt="Check icon" />Early
+              access to new tech book releases
+            </li>
+            <li class="feature-item">
+              <img src="./assets/images/icon-check.svg" alt="Check icon" />
+              Author Q&A sessions with tech thought leaders
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- NOT AVERAGE SECTION -->
+      <section class="not-average grid grid-2-cols">
+        <article>
+          <h2 class="heading not-average__heading">
+            Not your average book <span class="circle">club</span>
+          </h2>
+          <p class="section__description">
+            Connect with a community that speaks your language - from
+            <strong>Python</strong> to <strong>TypeScript</strong> and
+            everything in between. Our discussions blend technical depth with
+            practical applications.
+          </p>
+        </article>
+        <picture>
+          <source
+            media="(max-width: 475px)"
+            srcset="./assets//images/image-not-average-mobile.webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets//images/image-not-average-tablet.webp"
+          />
+          <img
+            class="section__img"
+            src="./assets//images/image-not-average-desktop.webp"
+            alt="two man and two women discussing books together"
+          />
+        </picture>
+      </section>
+
+      <!-- READING JOURNEY SECTION -->
+      <section class="reading-journey">
+        <h2 class="heading reading-journey__heading">
+          Your tech reading journey
+        </h2>
+        <ol class="steps-list grid grid-4-cols">
+          <li class="step-item">
+            <div class="step__number">1</div>
+            <p class="step__description">Choose your membership tier</p>
+          </li>
+          <li class="step-item">
+            <div class="step__number">2</div>
+            <p class="step__description">Get your monthly book selection</p>
+          </li>
+          <li class="step-item">
+            <div class="step__number">3</div>
+            <p class="step__description">Join our discussion forums</p>
+          </li>
+          <li class="step-item">
+            <div class="step__number">4</div>
+            <p class="step__description">Attend exclusive meetups</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- MEMBERSHIP OPTIONS SECTION -->
+      <section class="membership">
+        <h2 class="heading membership__heading">Membership options</h2>
+        <div class="options grid grid-3-cols">
+          <article class="option">
+            <div class="option__details">
+              <h3 class="option__name">Starter</h3>
+              <p class="option__price">
+                $19<span class="option__duration">/month</span>
+              </p>
+              <ul class="option__features">
+                <li class="option__feature">
+                  <img
+                    class="option__feature__icon"
+                    src="./assets/images/icon-check.svg"
+                    alt="Check icon"
+                  />1 book/month
+                </li>
+                <li class="option__feature">
+                  <img
+                    class="option__feature__icon"
+                    src="./assets/images/icon-check.svg"
+                    alt="Check icon"
+                  />Online forums
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn--primary btn--full-width">
+              Subscribe now
+            </button>
+          </article>
+
+          <article class="option">
+            <div class="option__details">
+              <h3 class="option__name">Pro</h3>
+              <p class="option__price">
+                $29<span class="option__duration">/month</span>
+              </p>
+              <ul class="option__features">
+                <li class="option__feature">
+                  <img
+                    class="option__feature__icon"
+                    src="./assets/images/icon-check.svg"
+                    alt="Check icon"
+                  />
+                  books/month
+                </li>
+                <li class="option__feature">
+                  <img
+                    class="option__feature__icon"
+                    src="./assets/images/icon-check.svg"
+                    alt="Check icon"
+                  />Virtual meetups
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn--primary btn--full-width">
+              Subscribe now
+            </button>
+          </article>
+
+          <article class="option">
+            <div class="option__details">
+              <h3 class="option__name">Enterprise</h3>
+              <p class="option__price">Custom</p>
+              <div class="divider"></div>
+              <ul class="option__features">
+                <li class="option__feature">Team access</li>
+                <li class="option__feature">Private sessions</li>
+              </ul>
+            </div>
+            <button class="btn btn--primary btn--full-width">Talk to us</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL SECTIONS -->
+      <section class="testimonial">
+        <div class="testimonials__rating">
+          <img src="./assets/images/icon-star.svg" alt="star icon" />
+          <img src="./assets/images/icon-star.svg" alt="star icon" />
+          <img src="./assets/images/icon-star.svg" alt="star icon" />
+          <img src="./assets/images/icon-star.svg" alt="star icon" />
+          <img src="./assets/images/icon-star.svg" alt="star icon" />
+        </div>
+        <blockquote>
+          <p class="testimonial__text">
+            "This book club transformed my technical reading from a solitary
+            activity into an enriching community experience. The discussions are
+            gold!"
+          </p>
+          <cite class="testimonial__author"
+            >Sarah Chen, Software Architect</cite
+          >
+        </blockquote>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__cta">
+          <h2 class="heading footer__heading">
+            Ready to debug your reading list?
+          </h2>
+          <div>
+            <button class="btn btn--secondary">
+              Review membership options
+              <img
+                class="btn__icon"
+                src="./assets/images/icon-arrow-up.svg"
+                alt="up arrow icon"
+              />
+            </button>
+            <div class="testimonials">
+              <figure>
+                <img
+                  class="testimonials__avatar"
+                  src="./assets/images/image-avatars.webp"
+                  alt="Three customer face picture"
+                />
+              </figure>
+              <article>
+                <div class="testimonials__rating">
+                  <img src="./assets/images/icon-star.svg" alt="star icon" />
+                  <img src="./assets/images/icon-star.svg" alt="star icon" />
+                  <img src="./assets/images/icon-star.svg" alt="star icon" />
+                  <img src="./assets/images/icon-star.svg" alt="star icon" />
+                  <img src="./assets/images/icon-star.svg" alt="star icon" />
+                </div>
+                <p class="testimonials__total testimonials__total--white">
+                  200+ developers joined already
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <p>&copy; 2025 - Tech Book Club</p>
+          <div class="social-media">
+            <img src="./assets//images/logo-bluesky.svg" alt="Bluesky logo" />
+            <img src="./assets/images/logo-linkedin.svg" alt="Linkedin logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

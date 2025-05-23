@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/inter/Inter-Italic-VariableFont_opsz\wght.ttf),
+    url(./assets/fonts/inter/Inter-VariableFont_opsz\wght.ttf);
+}
+
+@font-face {
+  font-family: "Martian Mono";
+  src: url(./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 64px;
+}
+
+header {
+  padding-top: 32px;
+  background-image: repeating-linear-gradient(
+      rgba(10, 13, 22, 0.1),
+      rgba(10, 13, 22, 0.1) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(10, 13, 22, 0.1),
+      rgba(10, 13, 22, 0.1) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    radial-gradient(
+      circle at right bottom,
+      #9cc9da 10%,
+      #faf5f3 30%,
+      transparent 20%
+    ),
+    radial-gradient(at top left, #faf5f3, #faf5f3 80%);
+}
+
+.logo-wrapper {
+  width: 100%;
+}
+
+.logo {
+  width: 192px;
+}
+
+.hero {
+  padding-block: 80px;
+}
+
+.title {
+  font-family: "Martian Mono", monospace;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  background-image: linear-gradient(107deg, #fea36f, #062630 45%);
+  background-clip: text;
+  color: transparent;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  color: #385159;
+  margin-block: 24px 32px;
+}
+
+button {
+  background-image: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  border: 2px solid #062630;
+  padding: 1em 1.2em;
+  border-radius: 8px;
+  color: #062630;
+  font-family: "Martian Mono", monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.total-testimonials {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.testimonial-avatars {
+  height: 40px;
+}
+
+.rating-stars {
+  margin-bottom: 4px;
+}
+
+.rating-stars img {
+  width: 20px;
+  height: 20px;
+  text-align: left;
+}
+
+.testimonial-stats {
+  color: #385159;
+  font-family: "Martian Mono", monospace;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hero-img {
+  border-radius: 8px;
+}
+
+section {
+  margin-block: 120px;
+}
+
+.sec-img {
+  border-radius: 8px;
+}
+
+.sec-content h2 {
+  color: #062630;
+  font-family: "Martian Mono", monospace;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  max-width: 15ch;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+li {
+  color: #385159;
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  max-width: 35ch;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sec-content p {
+  color: #385159;
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-top: 24px;
+}
+
+.circle {
+  position: relative;
+}
+
+.circle::after {
+  content: url(./assets//images/pattern-circle.png);
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+
+.sec-img-wrapper-ralative {
+  position: relative;
+}
+
+.logos-tech {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  transform: translateX(-65%);
+}
+
+.reading-journey-section {
+  background-image: repeating-linear-gradient(
+      rgba(231, 228, 228, 0.1),
+      rgba(203, 198, 198, 0.4) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(231, 228, 228, 0.1),
+      rgba(203, 198, 198, 0.4) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    radial-gradient(
+      circle at right bottom,
+      #9cc9da 10%,
+      #faf5f3 30%,
+      transparent 50%
+    ),
+    radial-gradient(at top left, #faf5f3, #faf5f3 80%);
+  padding: 80px 60px;
+}
+
+.reading-journey-section h2 {
+  color: #062630;
+  font-family: "Martian Mono", monospace;
+  font-size: 5rem;
+  line-height: 1.2;
+  letter-spacing: -4px;
+  text-align: center;
+  max-width: 14ch;
+  margin-inline: auto;
+  margin-bottom: 64px;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #062630;
+  border-radius: 4px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #062630;
+  font-family: "Martian Mono", monospace;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.step-description {
+  color: #062630;
+  font-family: "Martian Mono", monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1;
+  max-width: 18ch;
+}
